@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRA CALCULATOR</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<body style="background-image: url('https://i.ibb.co/XydGmKy/photo-1520052205864-92d242b3a76b-modified.png');background-repeat: no-repeat; background-size: 100% 100%;  ">
+  <script>
+    function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+  </script>
+
+    <h2 style="color: white; margin-left: -0.5%; margin-top: -0.8%; margin-left: -0.8%;font-family: 'Poppins', sans-serif; min-width: 98.3%; background-color: #2f2f2f;padding:1.5%;">   HRA CALCULATOR</h2>
+    <div style=" margin-left:0px ">
+        <div>
+<div id="div0" style="display: inline-block;  width:30%; padding:90px; padding-right: 350px; margin:auto; margin-top: -5%">
+    <p >
+    <h2>
+        <u style="color:#890000">HRA EXEMPTION</u>
+    </h2>
+    HRA is one of the primary components of the salary of a person. HRA is that part of the salary that an employer pays to her/his employees for covering up the expenses related to accommodation. For a person who actually lives in a rented house, exemption on HRA helps in income tax savings. However, if a person does not live in a rented house and yet is getting HRA as salary component, the full amount received as HRA is taxable.
+    
+    <br>
+    <br>
+    <p style="font-size: 17px;">
+      <b style="color:#890000">
+    Actually, HRA is the lowest of the below mentioned four factors:
+    </b>
+    <br>
+    <br>
+    
+    </p>
+    <ol class="list-group list-group-numbered" >
+      <li class="list-group-item">The actual amount received as <b>HRA</b> from the employer.</li>
+      <li class="list-group-item">The <b>rent</b> that you have actually paid reduced by <b>10% of the salary</b>.</li>
+      <li class="list-group-item"><b>50% of the basic salary</b>, in case the place of residence of the tax payer is in a metro location.</li>
+      <li class="list-group-item"><b>40% of the basic salary</b>, in case the place of residence of the tax payer is in a non-metro location.</li>
+    </ol>
+
+</p>
+</div>
+<style>
+  #div1{
+    background-color: white; width:424px; margin: auto; margin-top: 5.3%; border-radius: 5%; margin-right: -5%; display:inline-block;
+    transition:600ms linear; -webkit-transition:600ms linear; -moz-transition:600ms linear; -o-transition:600ms linear; -ms-transition:600ms linear; 
+  }
+</style>
+ <div id = "div1" >
+ 
+    <h2 style="color: #b12323; padding-left: 15px">House Rent Allowance</h2>
+ 
+ 
+    <div>
+<div style="display: inline-block; padding-left: 15px; padding-right: 25px;">
+    <p  style="color: black; font-size: 20px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat'; width:170px;">Basic Salary (P.A)</p>
+    <input type="text" id="salary" name="fname" style="background-color: #c3b0b0; text-align: right; font-size: 17px; width: 100%; padding: 5px;" ><span style="margin-left:-10em;font-size: 17px; ">₹</span></div>
+
+<div style="display: inline-block;  padding-left: 15px; padding-right: 25px;">
+    <p style="color: black; font-size: 20px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;">Dearness Allowance </p>
+    <input type="text" id="dearness" name="fname" style="background-color: #c3b0b0; text-align: right; font-size: 17px; width: 100%;padding: 5px;"><span style="margin-left:-10em;font-size: 17px; ">₹</span></div></div>    
+
+<div>
+    <div style="display: inline-block; padding-left: 15px; padding-right: 25px;">
+        <p style="color: black; font-size: 20px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;">HRA (P.A)</p>
+        <input type="text" id="hra" name="fname" style="background-color: #c3b0b0; text-align: right; font-size: 17px; width: 100%;padding: 5px;"><span style="margin-left:-10em;font-size: 17px; ">₹</span>
+    </div>
+    <div style="display: inline-block; padding-left: 15px; padding-right: 25px; ">
+        <p style="color: black; font-size: 20px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;">Total Rent (P.A)</p>
+        <input type="text" id="rent" name="fname" style="background-color: #c3b0b0; text-align: right; font-size: 17px; width: 100%;padding: 5px;"><span style="margin-left:-10em;font-size: 17px; ">₹</span></div>
+    </div>
+
+    <div style="padding: 10px; padding-top: 20px; font-size: 15px;">
+        <p>
+            Do you live in metros like Delhi, Mumbai, Kolkata or Chennai?*
+        </p>
+        <label class="container" style="padding-right:10px">Yes
+            <input id="yes" type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">No
+            <input id="no" type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+    </div>
+
+    
+
+    <style>
+        /* The container */
+        .container {
+          display: inline-block;
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size:15px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* Hide the browser's default radio button */
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        
+        /* Create a custom radio button */
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 15px;
+          width: 15px;
+          background-color: white;
+          border-radius: 50%;
+          border: solid 2px red
+          
+        }
+        
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+          background-color: rgb(191, 191, 191)
+        }
+        
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+          background-color: white;
+        }
+        
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+          display: inline-block;
+        }
+        
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+             top: 2.5px;
+            left: 2.5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: red;
+        }
+        </style>
+        <div style="margin-left: 34%; padding: 15px; padding-top: 10px; padding-bottom: 20px;">
+            <button style="font-size:20px" onclick= "openSearchPage()">Calculate</button>
+        </div>
+
+
+        
+</div>
+
+ <!------------------------------------------------------------ -->
+
+
+ <style>
+  #div2{
+    background-color: white; width: 424px; min-height: 427.033px; margin: auto; margin-top: 5.3%; border-radius: 5%; margin-right: -5%; display:none;
+    transition:600ms linear; -webkit-transition:600ms linear; -moz-transition:600ms linear; -o-transition:600ms linear; -ms-transition:600ms linear;
+  }
+</style>
+
+
+ <div id = "div2" >
+  <h2 style="color: green; padding-left: 15px">House Rent Allowance</h2>
+
+
+  <div>
+<div style="display: inline-block; padding-left: 15px; padding-right: 25px;">
+  
+  
+
+   
+
+<div style="margin-top:-1%">
+  
+ 
+
+  
+
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        
+        <th scope="col">Metric</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td><p  style="color: black; font-size: 17px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat'; width:170px;">HRA</p></td>
+        <td><input type="text" id="salary" name="fname" style="background-color: #b0c3b9; text-align: right; font-size: 17px; width: 100%; padding: 5px; margin-top:-20%" disabled><span1 id="demoa" style="display:block; color:black;  background-color: #ffffff; min-width: 80px; text-align: right;  font-size: 17px; padding-right: 5px; margin-top:-15%; font-family: 'Montserrat';"></span1></div></td>
+      </tr>
+      
+
+      <tr>
+        
+        <td><p style="color: black; font-size: 17px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;">Rent</p></td>
+        <td><input type="text" id="hra" name="fname" style="background-color: #b0c3b9; text-align: right; font-size: 17px; width: 100%;padding: 5px; margin-top:-20%" disabled><span2 id="demob" style="display:block; color:black;  background-color: #ffffff; min-width: 80px; text-align: right;  font-size: 17px; padding-right: 5px; font-family: 'Montserrat';margin-top:-15%;"></span2></td>
+      </tr>
+
+      <tr>
+        
+        <td><p style="color: black; font-size: 17px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;"><span id="p"></span>% of Basic Salary</p></td>
+        <td><input type="text" id="hra" name="fname" style="background-color: #b0c3b9; text-align: right; font-size: 17px; width: 100%;padding: 5px; margin-top:-20%" disabled><span2 id="democ" style="display:block; color:black;  background-color: #ffffff; min-width: 80px; text-align: right;  font-size: 17px; padding-right: 5px; font-family: 'Montserrat';margin-top:-15%;"></span2></td>
+      </tr>
+
+
+      <tr>
+        
+        <td><p  style="color: black; font-size: 17px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat'; width:170px;">Exempted HRA</p></td>
+        <td><input type="text" id="salary" name="fname" style="background-color: #b0c3b9; text-align: right; font-size: 17px; width: 100%; padding: 5px;" disabled><span1 id="demo1" style="display:block; color:black;  background-color: #ffffff; min-width: 80px; text-align: right;  font-size: 17px; padding-right: 5px; margin-top:-15%; font-family: 'Montserrat';"></span1></div></td>
+      </tr>
+      
+
+      <tr>
+        
+        <td><p style="color: black; font-size: 17px; box-shadow: 10px 10x 10px black; font-family: 'Montserrat';width:170px;">Taxable HRA</p></td>
+        <td><input type="text" id="hra" name="fname" style="background-color: #b0c3b9; text-align: right; font-size: 17px; width: 100%;padding: 5px;" disabled><span2 id="demo2" style="display:block; color:black;  background-color: #ffffff; min-width: 80px; text-align: right;  font-size: 17px; padding-right: 5px; font-family: 'Montserrat';margin-top:-15%;"></span2></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+  
+
+  <style>
+      /* The container */
+      .container {
+        display: inline-block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size:15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default radio button */
+      
+      </style>
+      <div style="margin-left: 28%; padding: 15px; padding-top: 17px; padding-bottom: 20px; margin-top:-4.75%">
+          <button style="font-size:20px" onclick= "openFoundPage()">Calculate Again</button>
+      </div>
+
+
+      
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id = "div2" style="display:none; background-color: white;  min-width:424px; max-width:424px; min-height:427.033px; margin: auto; margin-top: 5%; border-radius: 5%; margin-right: 5%;  ">
+  <span1 id="demo1" style="display:block; color:#b12323; min-width:424px; max-width:424px; min-height:427.033px; background-color: #ffffff; min-width: 80px; text-align: right; font-weight: 150px; font-size: 100px; padding-right: 5px;"></span1>
+</div> -->
+
+</div>
+
+</div> 
+
+
+<script>
+  const searchInput1 = document.getElementById('salary');
+  const searchInput2 = document.getElementById('dearness');
+  const searchInput3 = document.getElementById('hra');
+  const searchInput4 = document.getElementById('rent');
+
+  // const searchInput5 = Math.min([parseInt(searchInput3.value),(0.5*((parseInt(searchInput1.value))+parseInt(searchInput2.value)*12)),(parseInt(searchInput1.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value)*12))]);
+  
+
+//       searchInput.addEventListener("keydown", function (e) {
+// if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+//  openSearchPage();
+// }
+// });
+
+function openSearchPage() {
+  
+var output1 = document.getElementById("demo1");
+var output2 = document.getElementById("demo2");
+var outputp = document.getElementById("p");
+var outputa = document.getElementById("demoa");
+var outputb = document.getElementById("demob");
+var outputc = document.getElementById("democ");
+
+if (document.getElementById("yes").checked == true){
+ 
+//  wide();
+
+ output2.innerHTML = '₹' + numberWithCommas((parseInt(searchInput3.value) - parseInt(Math.min(parseInt(searchInput3.value),(0.5*((parseInt(searchInput1.value))+parseInt(searchInput2.value))),(parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value)))))));
+ 
+ outputa.innerHTML = '₹'+numberWithCommas(parseInt(searchInput3.value));
+ if ((parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value))) >= 0){
+  outputb.innerHTML = '₹'+numberWithCommas((parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value))));
+  output1.innerHTML = '₹'+numberWithCommas(Math.min(parseInt(searchInput3.value),(0.5*((parseInt(searchInput1.value))+parseInt(searchInput2.value))),(parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value)))));
+ }
+ else{
+  outputb.innerHTML = '₹'+0;
+  output1.innerHTML = '₹'+0;
+ }
+ outputc.innerHTML = '₹'+numberWithCommas(0.5*((parseInt(searchInput1.value))+parseInt(searchInput2.value)));
+ outputp.innerHTML = 50;
+replace();
+//  wide3();
+ 
+}
+else{
+    
+  output2.innerHTML = '₹' + numberWithCommas((parseInt(searchInput3.value) - parseInt(Math.min(parseInt(searchInput3.value),(0.4*((parseInt(searchInput1.value))+parseInt(searchInput2.value))),(parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value)))))));
+  
+  outputa.innerHTML = '₹'+numberWithCommas(parseInt(searchInput3.value));
+  if ((parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value))) > 0){
+  outputb.innerHTML = '₹'+numberWithCommas((parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value))));
+  output1.innerHTML = '₹'+numberWithCommas(Math.min(parseInt(searchInput3.value),(0.4*((parseInt(searchInput1.value))+parseInt(searchInput2.value))),(parseInt(searchInput4.value)-0.1*((parseInt(searchInput1.value))+parseInt(searchInput2.value)))));
+ }
+ else{
+  outputb.innerHTML = '₹'+0;
+  output1.innerHTML = '₹'+0;
+ }
+  outputc.innerHTML = '₹'+numberWithCommas(0.4*((parseInt(searchInput1.value))+parseInt(searchInput2.value)));
+  outputp.innerHTML = 40;
+  
+  replace();
+}
+// console.log(query);
+
+function replace() {
+document.getElementById("div1").style.display="none";
+document.getElementById("div2").style.display="inline-block";
+// setTimeout(wide2, 500);
+// wide2();
+// document.getElementById("div0").style.display="none";
+}
+
+}
+
+function openFoundPage(){
+  document.getElementById("div2").style.display="none";
+ document.getElementById("div1").style.display="inline-block";
+}
+
+
+// function wide(){
+//   document.getElementById("div1").style.backgroundColor = "  background: linear-gradient(to right, #799f0c, #acbb78)";
+// }
+
+// function wide2(){
+//   document.getElementById("div2").style.background = "white";
+// }
+// function wide3(){
+//   document.getElementById("div2").style.background = "  background: linear-gradient(to right, #799f0c, #acbb78) ";
+// }
+
+// function wide4(){
+//   document.getElementById("div3").style.backgroundColor = "white";
+// }
+</script>
+
+</body>
+</html>
